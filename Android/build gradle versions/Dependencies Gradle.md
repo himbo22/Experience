@@ -1,6 +1,7 @@
-#dependencies.gradle
+# dependencies.gradle
 
-```ext {
+```
+ext {
     room_version = "2.6.1"
     lifecycle_version = "2.7.0"
     nav_version = "2.7.6"
