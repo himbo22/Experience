@@ -26,3 +26,9 @@
     scalable_size_version = "1.1.0"
 }
 ```
+
+How to create this ```file``` and link it into ```build.gradle```
+
+Go to ```Project``` -> ```app``` and create new file name it : ```dependencies.gradle```
+
+Now switch to ```build.gradle``` (Module :app) and use this line to link the file we just created : ```apply from: 'dependencies.gradle'```
