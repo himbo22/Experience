@@ -19,3 +19,12 @@ string t = s.substr(2);
 -> t == "31"
 
 ```
+
+# Compare String : 
+We can use max(a,b) : 
+```c++
+string s = "123"
+string t = "321"
+
+-> max(s,b) will be "321"
+```
