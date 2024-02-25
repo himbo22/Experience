@@ -117,7 +117,7 @@ fun Activity.registerFragmentLifecycleCallbacks() {
 }
 ```
 
-#How to use it?
+# How to use it?
 
 In `MyApplication` when we created for Dagger-Hilt : 
 
