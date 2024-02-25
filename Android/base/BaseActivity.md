@@ -64,35 +64,3 @@ abstract class BaseActivity<VB : ViewBinding, VM : ViewModel> : AppCompatActivit
 
 ```
 
-## Explain
-
-In Base, we use ```protected open fun``` instead of ```abstract fun``` for decrease override functions from Base.
-
-```kotlin
-protected open fun initSplashScreen(){}
-```
-This function necessary for initialize Splash Screen, it must run before setContentView() run.
-
-```kotlin
-protected open fun initData(){}
-```
-
-```kotlin
-protected open fun bindComponent(){}
-```
-
-```kotlin
-protected open fun bindEvent(){}
-```
-
-```kotlin
-protected open fun observeData(){}
-```
-
-```kotlin
-protected open fun setUpNavigation(){}
-```
-
-```kotlin
-protected open fun bindData(){}
-```

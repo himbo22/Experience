@@ -19,9 +19,9 @@ abstract class BaseFragment<VB : ViewBinding, vm : ViewModel> : Fragment(),
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        bindEvent()
         initData()
         bindComponent()
-        bindEvent()
         bindData()
         observeData()
     }
@@ -31,17 +31,12 @@ abstract class BaseFragment<VB : ViewBinding, vm : ViewModel> : Fragment(),
         _binding = null
     }
 
+
     protected open fun initData() {}
     protected open fun bindData() {}
     protected open fun bindComponent() {}
     protected open fun bindEvent() {}
     protected open fun observeData() {}
-
-    fun addViewClickEvents(vararg views: View) {
-        requireContext().registerSingleViewClick(*views) { view ->
-            onSingleViewClick(view)
-        }
-    }
 }
 ```
 
