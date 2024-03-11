@@ -28,3 +28,16 @@ string t = "321"
 
 -> max(s,b) will be "321"
 ```
+
+# Create a character with certain quantity :
+
+We use : 
+```c++
+int quantity = 3;
+char c = 'a';
+string s = string(quantity, c);
+```
+And the result will be :
+```c++
+-> s = "aaa";
+```
