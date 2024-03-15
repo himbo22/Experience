@@ -77,6 +77,8 @@ int sum = (n*n+n - m*m-m) / 2 + m;
 ```
 ❌ Don't do this 
 ```c++
+int m = 10;
+int n = 100;
 int s = 0;
 for(int i=m;i<=n;i++) s+=i;
 // output : s = 5005
