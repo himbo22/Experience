@@ -25,6 +25,7 @@ If you want to calculate the sum from 1 to n, you can do this approach with O(1)
 ```sum of 1 -> n : n*(n+1)/2```
 
 **For example:**
+
 ✅ Do this
 ```c++
 int n = 100;
@@ -63,4 +64,20 @@ Assuming that, we run two for loops from ```1 to x``` and ```1 to n```, then we 
     s = s1 - s2 + x
 <=> s = n * (n + 1) / 2 - x * (x + 1) / 2 + x
  => s = (n * n + n - x * x - x)/2+x
+```
+
+**For example:**
+
+✅ Do this
+```c++
+int m = 10;
+int n = 100;
+int sum = (n*n+n - m*m-m) / 2 + m;
+// output: sum = 5005
+```
+❌ Don't do this 
+```c++
+int s = 0;
+for(int i=m;i<=n;i++) s+=i;
+// output : s = 5005
 ```
